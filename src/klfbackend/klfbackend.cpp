@@ -1538,7 +1538,7 @@ static void correct_eps_bbox(const QByteArray& rawepsdata, const klfbbox& bbox_c
 	  );
   }
 
-  char buffer2[1024];
+  char buffer2[2048];
   //int buffer2_len;
   snprintf(buffer2, sizeof(buffer2)-1,
 	   "%s"

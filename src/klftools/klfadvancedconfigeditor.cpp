@@ -27,6 +27,7 @@
 #include <QStandardItemEditorCreator>
 #include <QMessageBox>
 #include <QLineEdit>
+#include <QAction>
 
 #include <klfitemviewsearchtarget.h>
 #include "klfadvancedconfigeditor.h"

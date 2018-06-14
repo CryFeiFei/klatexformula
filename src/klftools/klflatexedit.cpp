@@ -845,7 +845,7 @@ QDebug operator<<(QDebug str, const KLFLatexSyntaxHighlighter::ParsedBlock& p)
   str << "ParsedBlock["<<stype.toLatin1()<<": "<<p.pos<<"+"<<p.len;
   if (p.type == KLFLatexSyntaxHighlighter::ParsedBlock::Keyword) {
     str << ", "<<p.keyword;
-  } else if (KLFLatexSyntaxHighlighter::ParsedBlock::Paren) {
+  } else if (p.type == KLFLatexSyntaxHighlighter::ParsedBlock::Paren) {
     str << ", "<<smatched.toLatin1()<<(p.parenisopening?"(opening)":"(closing)")<<"#"<<p.parenSpecIndex<<" "
 	<<p.parenmodifier<<p.parenstr<<" otherpos="<<p.parenotherpos;
   }
